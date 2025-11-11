@@ -7,6 +7,7 @@ const cors = require('cors')
 // nto working
 
 const app = express()
+app.use(express.static('dist'))
 app.use(cors()) // allows request from all origins
 
 app.use(express.json()) // parses request received from JSON to java script object and attaches to request body
